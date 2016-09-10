@@ -18,7 +18,7 @@ namespace UnityStandardAssets.Effects
                 var ma = system.main;
                 ma.startSizeMultiplier = multiplier;
                 ma.startSpeedMultiplier = multiplier;
-                system.startLifetime *= Mathf.Lerp(multiplier, 1, 0.5f);
+                ma.startLifetimeMultiplier = Mathf.Lerp(multiplier, 1, 0.5f);
                 system.Clear();
                 system.Play();
             }
