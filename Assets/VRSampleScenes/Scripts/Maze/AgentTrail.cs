@@ -48,7 +48,7 @@ namespace VRStandardAssets.Maze
             UnityEngine.AI.NavMeshPath path = m_Agent.path;
 
             // Set the LineRenderer to have as many points as the path has corners.
-            m_Line.SetVertexCount(path.corners.Length);
+            m_Line.numPositions= path.corners.Length;
 
             // Go through all the corners and set the line's points to the corners' positions.
             for (int i = 0; i < path.corners.Length; i++)
